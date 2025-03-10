@@ -14,5 +14,4 @@ jobs:
     - name: Print Hello World
       env:
           API_KEY: "Hello World"
-      run: |
-        echo "This is the API key: $API_KEY"
+      run: echo "This is the API key: ${API_KEY}"
