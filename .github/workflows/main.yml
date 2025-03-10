@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello World
+      env:
+          API_KEY: "Hello World"
+      run: echo "This is the API key: $API_KEY"
